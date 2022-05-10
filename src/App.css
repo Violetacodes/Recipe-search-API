@@ -1,38 +1,210 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-weight: bolder;
+}
+
+
+.Iam {
+  padding: 1em 2em;
+  font: normal 40px/50px 'Montserrat', sans-serif;
+  color: #999;
+  background: #edeaea;
+}
+.Iam p {
+  height: 10px;
+  float: left;
+  margin-right: 0.3em;
+}
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  top: 40px;
+}
+.Iam .innerIam {
+  display: inline-block;
+  color: #6a992c;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+
+
+-webkit-animation:move 6s;
+   -moz-animation:move 6s;
+    -ms-animation:move 6s;
+     -o-animation:move 6s;
+        animation:move 6s;
+
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+
+-webkit-animation-delay:2s;
+   -moz-animation-delay:2s;
+    -ms-animation-delay:2s;
+     -o-animation-delay:2s;
+        animation-delay:2s;
+}
+@keyframes move{
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
+}
+
+@-webkit-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-moz-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-o-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+
+
+video {
+
+  object-fit: cover;
+
+  width: 100vw;
+
+  height: 100vh;
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  z-index: -1;
+
+}
+
 .App {
-  text-align: center;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+
+  display: flex;
+
+  justify-content:center;
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search {
+
+       width: 100%;
+
+        padding: 12px 24px;
+
+        background-color: transparent;
+
+        font-size: 14px;
+
+        line-height: 18px;
+
+        margin-left: 0px;
+        border: 1px solid grey;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+       background: #edeaea;
+       margin: 10px;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon{
+width: 30px;
+}
+
+.list{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:center;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+
+  list-style: none; 
+  /* background-color: #dcdde1;
+  border-radius: 120px; */
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li:hover{
+  background: #dbecc4;
+  border-radius: 20px;
 }
+
+
+button{
+  background: #dbecc4;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+
+.image {
+    width: 300px;
+    height: 250px;
+    border: 1px solid white;
+    background: #f0f1ef;
+    margin: auto;
+    padding: 15px 10px;
+    border-radius: 20px;
+  }
+
+  .color{
+    background-color: bisque;
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .colortwo{
+    background-color: rgb(198, 236, 153);
+    padding: 15px;
+    border-radius: 20px;
+  }
+  .colorthree{
+    background-color: rgb(196, 255, 250);
+    padding: 15px;
+    border-radius: 20px;
+  }
+  .colorfour{
+    background-color: rgb(250, 196, 255);
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  
